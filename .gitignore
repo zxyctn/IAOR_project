@@ -1,4 +1,6 @@
 # No images to be uploaded
 img/
 data/
+workspaces/
+model/
 *.png
