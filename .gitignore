@@ -1,8 +1,6 @@
 # No images to be uploaded
 img/
-data/
 workspaces/
-testing/
 venv/
 model/
 *.png

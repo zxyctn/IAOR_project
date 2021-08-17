@@ -8,7 +8,7 @@
 [t, f] = get_results('teaspoon')
 
 function [t, f] = get_results(category)
-    load('model/TrainedAlexNetModel5.mat')
+    load('model/finalModel.mat')
     % Get all the data for that specified category
     imgs = dir(strcat('testing/', strcat(category, '/*.jpg')));      
     % Get the number of images in that category
