@@ -2,5 +2,9 @@
 img/
 data/
 workspaces/
+testing/
+venv/
 model/
 *.png
+*.jpg
+*.mlx
