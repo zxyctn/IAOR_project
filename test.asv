@@ -1,10 +1,10 @@
-% fork
+%fork
 [t, f] = get_results('fork')
 
-% butterknife
+%butterknife
 [t, f] = get_results('butterknife')
 
-% teaspoon
+%teaspoon
 [t, f] = get_results('teaspoon')
 
 function [t, f] = get_results(category)
@@ -22,7 +22,9 @@ function [t, f] = get_results(category)
        img_name = imgs(i).name;
        img = imread(strcat(strcat('testing/', strcat(category, '/'), img_name)));
        img = imresize(img, [227, 227]);
-       y = classify(trainedNetwork_3, img); % remove semicolon in the end to see each predicted category
+       y = classify(trainedNetwork_3, img);
+       %y %uncomment this line to see eac
+       echo('Predicted:' y])
        if (y == category)
            t = t + 1;
        else
